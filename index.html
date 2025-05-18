@@ -42,3 +42,44 @@
       border-radius: 50%;
       overflow: hidden;
     }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+    
+    nav {
+      flex-grow: 1;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      justify-content: flex-end;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      position: relative;
+      padding: 5px 0;
+      transition: all 0.3s ease;
+    }
+    
+    nav a:hover {
+      color: #ffecb3;
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffecb3;
+      transition: width 0.3s ease;
+    }
